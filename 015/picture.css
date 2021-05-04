@@ -1,0 +1,207 @@
+body{
+    letter-spacing: -.31em;
+    text-rendering: optimizeSpeed;
+    margin: 0px;
+}
+
+span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 200px;
+    height: 200px;
+    position: relative;
+    top: calc(50% - 100px);
+}
+
+.box1 {
+    border: 1px solid black;
+    padding: 5px;
+    height: 210px;
+    width: 50%;
+    display: inline-block;
+    border-bottom: none;
+}
+
+.box2 {
+    border: 1px solid black;
+    padding: 5px;
+    height: 210px;
+    width: 33.33333%;
+    display: inline-block;
+    border-bottom: none;
+}
+
+.box3 {
+    border: 1px solid black;
+    padding: 5px;
+    height: 210px;
+    width: 25%;
+    display: inline-block;
+    border-bottom: none;
+}
+
+.box4 {
+    border: 1px solid black;
+    padding: 5px;
+    height: 210px;
+    width: 100%;
+    display: inline-block;
+}
+
+img {
+    height: 100%;
+    width: auto;
+    vertical-align: middle;
+}
+
+
+
+div {
+    box-sizing: border-box;
+    letter-spacing: normal;
+    zoom: 1;
+    font-family: 'Stick', sans-serif;
+}
+
+.buttons1 {
+    border: 1px solid black;
+    font-size: 22px;
+    height: 30px;
+    padding: 2px;
+    display: inline-block;
+    background-color: white;
+    opacity: 0.9;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 160px;
+}
+
+.buttons1:hover{
+    border: 1px solid darkviolet;
+    font-size: 22px;
+    height: 30px;
+    padding: 7px;
+    display: inline-block;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 160px;
+    transition: all 1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+ 
+.buttons1.Watermelon a::before{
+    content: "!";
+}
+
+.buttons2 {
+    border: 1px solid black;
+    font-size: 22px;
+    height: 30px;
+    padding: 2px;
+    display: inline-block;
+    background-color: white;
+    opacity: 0.9;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 370px;
+}
+
+
+
+.buttons2:hover{
+    border: 1px solid darkviolet;
+    font-size: 22px;
+    height: 30px;
+    padding: 7px;
+    display: inline-block;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 370px;
+    transition: all 1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+    
+.buttons2.Bananas a::after{
+    content: "*";
+}
+
+.buttons3 {
+    border: 1px solid black;
+    font-size: 22px;
+    height: 30px;
+    padding: 2px;
+    display: inline-block;
+    background-color: white;
+    opacity: 0.9;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 580px;
+}
+
+.buttons3:hover{
+    border: 1px solid darkviolet;
+    font-size: 22px;
+    height: 30px;
+    padding: 7px;
+    display: inline-block;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 580px;
+    transition: all 1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.box3 span:last-child{
+    font-weight: lighter;
+}
+
+.buttons4 {
+    border: 1px solid black;
+    font-size: 22px;
+    height: 30px;
+    padding: 2px;
+    display: inline-block;
+    background-color: white;
+    opacity: 0.9;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 790px;
+}
+
+.buttons4:hover{
+    border: 1px solid darkviolet;
+    font-size: 22px;
+    height: 30px;
+    padding: 7px;
+    display: inline-block;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 790px;
+    transition: all 1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+ 
+.buttons4 a:first-child{
+    font-style: italic;
+}

@@ -1,0 +1,28 @@
+p:first-child{
+    color: blue;
+}
+
+p{
+    color: yellow;
+}
+
+p:last-child{
+    color:red;
+}
+
+li:first-child{
+    color: black
+}
+
+li{
+    color: brown;
+}
+
+li:last-child{
+    display: none;
+}
+
+h1 p:first-child{
+    color: green;
+}
+

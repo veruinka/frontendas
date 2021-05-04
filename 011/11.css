@@ -1,0 +1,21 @@
+img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.stop{
+    clear: both;
+}
+
+p {
+    text-align: justify;
+}

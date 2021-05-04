@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    color: #666;
+    line-height: 1.6;
+}
+
+div{
+    display: block;
+}
+
+.main{
+    position: relative;
+    display: block;
+    width: 300px;
+    top:0;
+    bottom: 0;
+    left: -300px;
+    background-color: white;
+    transition: all .35s cubic-bezier(.29,.63,.44,1);
+}
+
+.main .meniuclosebutton{
+    right: auto;
+    left: -15px;
+}
+
+.icon{
+    display: inline-block;
+}
+
+.icon-x{
+content: "\f00d";
+}
+
+.icon::before{
+    display: inline;
+    font-family: "Font Awesome 5 Free";
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.meniuclosebutton{
+    background: 0 0;
+    border: 0 none;
+    position: relative;
+    right: -15px;
+    height: 100%;
+    width: 60px;
+    padding: 0 20px;
+    color: inherit;
+    font-size: 1.2em;
+}
+
+.meniuheader{
+    position: absolute;
+    top: 0;
+    display: table;
+    height: 65px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.meniuclose{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.meniukont{
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+    overflow: auto;
+}
+
+.meniunav{
+    padding: 0;
+    margin: -10px -10px 0;
+}
+
+.meniunav li{
+    padding: 0;
+    margin: -10px -10px 0;
+}
+
+.meniueilute{
+    display: block;
+}
+
+.linkas a{
+    display: block;
+    padding-left: 20px;
+    font-size: 1.33333em;
+    display: block;
+    padding-left: 20px;
+    font-size: 1.33333em;
+}
+
+.meniueilute_probelas{
+    height: 20px;
+}
+
+.meniueilute_second a{
+    color: #1a1a1a;
+    font-size: 15px;
+    line-height: 1.2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.h1{
+    font-family: Karla, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .05em;
+    margin: 0 0 .66667em;
+    line-height: 1.4;
+    color: #1a1a1a;
+}
+
+#menu:checked + div{
+    left:0;
+}

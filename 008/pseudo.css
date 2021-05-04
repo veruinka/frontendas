@@ -1,0 +1,46 @@
+
+/* .bbb:hover {
+    background-color: darkgoldenrod;
+    height: 100px;
+    width: 100px;
+    border: transparent;
+} */
+
+.bbb {
+    background-color: coral;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    transition: all 2s linear 0s;
+    position: relative;
+}
+
+.bbb::after{
+    content: "JAZZZZ";
+    color: black;
+    position: relative;
+    top: 50px;
+}
+
+.bbb::before{
+    content: "BYE B";
+    color: brown;
+    position: relative;
+    top: 120px;
+}
+
+
+
+.vaikai p.v{
+    color: blue;
+}
+
+.vaikai p:first-child{
+    color:brown;
+}
+
+
+.vaikai p:last-child{
+    color: chocolate;
+    font-size: x-large;
+}

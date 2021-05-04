@@ -1,0 +1,55 @@
+i {
+    color: darkred;
+    outline: dotted;
+    outline-color: rgb(30, 7, 158);
+}
+
+h3.s i {
+    color: red;
+    outline: dotted;
+    outline-color: rgb(62, 238, 129);
+}
+
+span {
+    color: deeppink;
+    outline: ridge;
+    outline-color: purple;
+}
+
+code {
+    color: khaki;
+    outline-style: dotted;
+    outline-color: teal;
+}
+
+.h code {
+    color: yellow;
+    outline-style: dotted;
+    outline-color: tomato;
+}
+
+.s {
+    color: aquamarine;
+    outline: dotted;
+}
+
+#mmmmm {
+    color: rosybrown;
+}
+
+.g {
+    color: chartreuse;
+    outline: outset;
+    outline-color: peru;
+}
+.h {
+    color: coral;
+    outline: outset;
+    outline-color: rgb(63, 205, 134);
+}
+
+.taip.ar {
+color: slategray;
+outline: auto;
+outline-color: sienna;
+}
