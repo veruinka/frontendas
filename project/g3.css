@@ -38,6 +38,11 @@ div{
     clear: both;
 }
 
+/* .ikoneles:after{
+    content: '\f113';
+    font-family: 'Font Awesome 5 Free';
+} */
+
 .logoimg img{
     max-height: 65px;
     display: block;
@@ -100,11 +105,11 @@ div{
 }
 
 .linija{
-    position: sticky;
     top: 550px;
     bottom: 0;
     left: 0;
     right: 0;
+    white-space: nowrap;
 }
 
 .linijosnav{
@@ -172,7 +177,12 @@ ul{
     margin: 0;
     padding: 0;
     list-style: none;
+}
 
+grid::after{
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .fotokont{
@@ -180,13 +190,16 @@ ul{
     float: left;
     position: relative;
     max-width: 428px;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .foto{
     position: relative;
     height: 0;
-    display: block;
+    display: inline-block;
     width: 100%;
+    margin: 0;
 }
 
 .paroda{
@@ -194,15 +207,86 @@ ul{
     top: 0;
     left: 0;
     width: 100%;
-    margin: 0 auto 20px;
+    margin: 0;
     transition: opacity .2s ease;
     max-width: 100%;
     border: 0;
+    cursor: pointer;
 }
+
+.uzrasas{
+    position: relative;
+    float: left;
+    padding-top: 20px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.pavadinimas{
+    margin: 0 15px 2px 15px;
+    font-size: 1em;
+    font-family: Karla,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .05em;
+    font-size: 15px;
+}
+
+.price{
+    margin: 0 15px 2px 15px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.price1{
+    margin: 0 15px 2px 15px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.price2{
+    margin: 0 15px 2px 15px;
+    font-size: 13px;
+}
+
+.price s{
+    opacity: .7;
+}
+
+.cena{
+    color: #dac08e;
+    padding-left: 5px;
+}
+
+.sale{
+    position: absolute;
+    top: -26px;
+    right: -94px;
+    width: 200px;
+    padding: 40px 4px 4px;
+    text-align: center;
+    background-color: #dac08e;
+    color: #fff;
+    font-size: .86667em;
+    font-weight: 700;
+    transform: rotate(45deg) translateZ(0);
+    cursor: pointer;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 989px) {
     .fotokont{
         margin-bottom: 40px;
+    }
+    .uzrasas{
+        padding-top: 20px;
+        float: left;
+        width: 100%;
     }
 }
 
