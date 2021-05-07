@@ -5,6 +5,8 @@
 
 body{
     letter-spacing: -.31em;
+    margin: 0;
+    padding: 0;
 }
 
 div{
@@ -48,6 +50,7 @@ div{
     display: block;
     margin: 0 auto;
     border: 0;
+    cursor: pointer;
 }
 
 .center::after{
@@ -73,7 +76,7 @@ div{
     top: 100px;
 }
 
-.SC {
+.SC h1{
     font-size: 1.33333em;
     font-weight: bold;
     font-style: normal;
@@ -105,11 +108,13 @@ div{
 }
 
 .linija{
-    top: 550px;
+    /* top: 550px;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     white-space: nowrap;
+    position: relative;
+    z-index: 10;
 }
 
 .linijosnav{
@@ -179,7 +184,7 @@ ul{
     list-style: none;
 }
 
-grid::after{
+.grid::after{
     content: '';
     display: table;
     clear: both;
@@ -191,8 +196,10 @@ grid::after{
     position: relative;
     max-width: 428px;
     margin: 0;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    overflow: hidden;
 }
+
 
 .foto{
     position: relative;
@@ -220,6 +227,8 @@ grid::after{
     padding-top: 20px;
     cursor: pointer;
     margin: 0;
+    min-height: 80px;
+    bottom: 0;
 }
 
 .pavadinimas{
@@ -237,6 +246,7 @@ grid::after{
     margin: 0 15px 2px 15px;
     margin-bottom: 0;
     font-size: 13px;
+    color: #666;
 }
 
 .price1{
@@ -274,6 +284,83 @@ grid::after{
     cursor: pointer;
 }
 
+.apacia{
+    margin-top: 60px;
+}
+
+.grid1{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+    float: left;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.info{
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.showcase{
+  
+    font-family: Karla,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .05em;
+    margin: 0 0 .66667em;
+    line-height: 1.4;
+    color: #1a1a1a;
+    font-size: 1.66667em;
+    font-size: 25px;
+}
+
+.baby{
+    text-align: center;
+    margin: 0 0 20px;
+    color: #666;
+}
+
+.company{
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.company:hover{
+color:  rgba(0, 0, 0, 0.801);
+}
+
+.gard{
+    padding-top: 15px;
+    margin: 0 0 20px;
+}
+
+.gardi{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -294,18 +381,28 @@ grid::after{
     .small {
         width: 50%;
     }
+    /* .fotokont{
+        min-height: 600px;
+    } */
 }
 
 @media only screen and (min-width: 750px) and (max-width: 989px) {
     .medium {
         width: 33.33333%;
     }
+    /* .fotokont{
+        min-height: 490px;
+    } */
 }
 
 @media only screen and (min-width: 990px){
     .large {
         width: 25%;
     }
+
+    /* .fotokont{
+        min-height: 400px;
+    } */
 }
 
 
