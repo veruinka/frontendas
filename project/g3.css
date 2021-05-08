@@ -17,9 +17,11 @@ div{
 .ir{
     min-height: 634px;
     background-image: url('bi.jpg');
-    background-size: auto 100%;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
+    max-width: 100%;
 }
 
 .vidus{
@@ -456,9 +458,15 @@ color:  rgba(0, 0, 0, 0.801);
     clip: rect(1px,1px,1px,1px);
 }
 
+a{
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
 .email{
     padding: 10px;
     width: 270px;
+    height: 45px;
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 10px;
@@ -500,8 +508,105 @@ color:  rgba(0, 0, 0, 0.801);
     border: solid black;
 }
 
-.submit-text{
-    color: #fff;
+.footer{
+    background-color: #f9f9f9;
+    color: #5c5c5c;
+    padding: 40px 20px;
+    display: block;
+}
+
+.list{
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.ha41{
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: Karla,sans-serif;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .05em;
+    line-height: 1.4;
+    list-style: none;
+}
+
+.ha41 a{
+    text-decoration: none;
+    display: block;
+    padding: 5px 20px;
+    color: #5c5c5c;
+}
+
+.ikonos{
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+}
+
+.soc1{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.soc1 li{
+    display: inline-block;
+    text-align: center;
+}
+
+.fb{
+    margin-bottom: 10px;
+}
+
+.fbbb{
+    font-size: 18px;
+    color: #5c5c5c;
+}
+
+.yaz::before{
+    content: '\f082';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    line-height: 1;
+}
+
+.insta .yt{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.insta::before{
+    content: '\f16d';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.yt::before{
+    content: '\f167';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.reco{
+    float: left;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.remco{
+    color: #5c5c5c;
 }
 
 
@@ -509,7 +614,25 @@ color:  rgba(0, 0, 0, 0.801);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 989px) {
+    
     .fotokont{
         margin-bottom: 40px;
     }
@@ -519,8 +642,14 @@ color:  rgba(0, 0, 0, 0.801);
         width: 100%;
     }
 
-    .email1{
+    .email.email1{
         font-size: 16px;
+    }
+
+    .remco .soc1 .vi0sa{
+        display: block;
+    text-align: center;
+    margin-bottom: 20px;
     }
 
 }
@@ -602,6 +731,31 @@ color:  rgba(0, 0, 0, 0.801);
         /* font-size: 40px; */
     }
 
+    .email.email1{
+        font-size: 15px;
+    }
+
+    .ha41{
+        display: inline-block;
+    }
+
+    .soc1 .vi0sa{
+        width: 25%;
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+        min-height: 1px;
+        padding-left: 0;
+    }
+
+    .remco{
+        width: 50%;
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+        min-height: 1px;
+        padding-left: 0;
+    }
 
 
 
