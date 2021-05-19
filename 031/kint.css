@@ -1,0 +1,18 @@
+:root{
+    --vienas: 10px;
+    --du: 20px;
+    --trys: 30px;
+}
+
+
+h1{
+    font-size: var(--vienas);
+}
+
+.kint{
+    font-size: var(--du);
+}
+
+h2{
+    font-size: var(--trys);
+}
