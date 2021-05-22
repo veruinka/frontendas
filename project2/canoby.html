@@ -13,8 +13,6 @@
 
 <body>
 
-    <div class="yorder"></div>
-
     <div class="wrap">
         <a id="overlay" href="" aria-controls="mobile-nav" aria-label="Close navigation"></a>
         <div id="wrap-content">
@@ -42,6 +40,7 @@
                                 <span>/</span>
                                 <form class="search-form" action="/search" method="get" autocomplete="off">
                                     <input type="hidden" name="type" value="product">
+                                    <input class="sear4" type="text" name="q" placeholder="SEARCH" aria-label="Search" autocomplete="off">
                                     <button type="submit" aria-label="Submit" style="cursor: pointer;">
                                         <svg width="19px" height="21px" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <g stroke="currentColor" stroke-width="0.5">
@@ -51,7 +50,6 @@
                                         </g>
                                         </svg>
                                     </button>
-                                    <input class="sear4" type="text" name="q" placeholder="SEARCH" aria-label="Search" autocomplete="off">
                                 </form>
                             </span>
                             <span class="toolbar-socials">
@@ -133,36 +131,387 @@
                             </div>
 
                             <nav class="main-navigation">
-
+                                <ul>
+                                    <li class="nav-item">
+                                        <a class="item-link" href="">
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="item-link" href="">
+                                            <span>Groceries</span>
+                                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
+                                                <path d="M0-.75h24v24H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="item-link" href="">
+                                            <span>Our Story</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="item-link" href="">
+                                            <span>Field Notes</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="item-link" href="">
+                                            <span>Contact</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="item-link" href="">
+                                            <span>Demos</span>
+                                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
+                                                <path d="M0-.75h24v24H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </nav>
                         </div>
+
                     </div>
                 </div>
             </header>
-        </div>
+<!-- //////////////////////////////////////////////////////MAIN PART////////////////////////////////////////// -->
+            <main id="content" role="main">
 
-        <div>
+                <section class="sect1" data-selection-type="slideshow">
+                    <div class="container">
+                        <div class="slideshows" role="toolbar">
+                            <button type="button" class="prev arrow" aria-label="Previous">
+                                <svg fill="#000000" viewBox="0 0 24 24" height="80" width="80" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 14.51,6.51 14,6 8,12 14,18 14.51,17.49 9.03,12 Z"></path>
+                                </svg>
+                            </button>
+                            <div class="draggable" aria-live="polite">
+                                <div class="track" aria-label="Image slider" role="listbox">
+
+                                </div>
+                            </div>
+                            <button type="button" class="next arrow" aria-label="Next">
+                                <svg fill="#000000" viewBox="0 0 24 24" height="80" width="80" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 10,6 9.49,6.51 14.97,12 9.49,17.49 10,18 16,12 Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sect2">
+                    <div class="container">
+                        <h1 class="yep">Welcome to Canopy Farm Shop</h1>
+                        <div class="since">
+                            <p>Since 1979, we have been one of the most pioneering farms in the country. We lead by example; farming, growing and producing according to sustainable organic principles because we respect and care for the land we work.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sect3">
+                    <div class="container">
+                        <div class="opposing">
+                            <h1 class="section-heading">
+                                <a href="">Fruits & Vegetables</a>
+                            </h1>
+                            <a href="" class="view">View all</a>
+                        </div>
+                        <div class="product-grid">
+                            <div class="first product-block">
+                                <div class="inner">
+                                    <div class="image">
+                                        <div class="innage">
+                                            <a href="">
+                                                <div class="img-wrapper">
+                                                    <img data-widths="[90, 180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_90x.jpg?v=1591107515 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_180x.jpg?v=1591107515 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_220x.jpg?v=1591107515 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_300x.jpg?v=1591107515 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_360x.jpg?v=1591107515 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_460x.jpg?v=1591107515 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_540x.jpg?v=1591107515 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_720x.jpg?v=1591107515 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_900x.jpg?v=1591107515 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1080x.jpg?v=1591107515 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1296x.jpg?v=1591107515 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1512x.jpg?v=1591107515 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1728x.jpg?v=1591107515 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_2048x.jpg?v=1591107515 2048w" sizes="133px" srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_90x.jpg?v=1591107515 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_180x.jpg?v=1591107515 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_220x.jpg?v=1591107515 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_300x.jpg?v=1591107515 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_360x.jpg?v=1591107515 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_460x.jpg?v=1591107515 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_540x.jpg?v=1591107515 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_720x.jpg?v=1591107515 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_900x.jpg?v=1591107515 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1080x.jpg?v=1591107515 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1296x.jpg?v=1591107515 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1512x.jpg?v=1591107515 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1728x.jpg?v=1591107515 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_2048x.jpg?v=1591107515 2048w">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <span class="product-label">
+                                            <span>Only 4 left!</span>
+                                        </span>
+                                    </div>
+                                    <div class="weight">0.44 Ib</div>
+                                    <div class="title-price">
+                                        <a class="title" href="">Fennel Bulb</a>
+                                        <div class="price">$1.50</div>
+                                    </div>
+                                    <form method="post" action="/cart/add" id="product_form_4675782541369" accept-charset="UTF-8" class="product-form" enctype="multipart/form-data" data-ajax-add-to-cart="true" data-product-id="4675782541369">
+                                        <input type="hidden" name="form_type" value="product">
+                                        <input type="hidden" name="utf8" value="✓">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="id" value="31765063532601">
+                                        <button type="submit" name="add" class="product-add">Add to cart</button>
+                                    </form>
+                                    <div class="reviews">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-block">
+                                <div class="inner">
+                                    <div class="image">
+                                        <div class="innage">
+                                            <a href="">
+                                                <div class="img-wrapper">
+                                                    <img data-widths="[90, 180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_90x.jpg?v=1591107518 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_180x.jpg?v=1591107518 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_220x.jpg?v=1591107518 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_300x.jpg?v=1591107518 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_360x.jpg?v=1591107518 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_460x.jpg?v=1591107518 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_540x.jpg?v=1591107518 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_720x.jpg?v=1591107518 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_900x.jpg?v=1591107518 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_1080x.jpg?v=1591107518 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_1296x.jpg?v=1591107518 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_1512x.jpg?v=1591107518 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_1728x.jpg?v=1591107518 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_2048x.jpg?v=1591107518 2048w" sizes="133px" srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_90x.jpg?v=1591107518 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_180x.jpg?v=1591107518 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_220x.jpg?v=1591107518 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_300x.jpg?v=1591107518 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_360x.jpg?v=1591107518 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_460x.jpg?v=1591107518 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_540x.jpg?v=1591107518 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_720x.jpg?v=1591107518 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_900x.jpg?v=1591107518 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_1080x.jpg?v=1591107518 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_1296x.jpg?v=1591107518 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_1512x.jpg?v=1591107518 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_1728x.jpg?v=1591107518 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_POTATOES_2048x.jpg?v=1591107518 2048w">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="weight">2.2 Ib</div>
+                                    <div class="title-price">
+                                        <a class="title" href="">New Potatoes</a>
+                                        <div class="price"><span>From </span>$3.50</div>
+                                    </div>
+                                    <form method="post" action="/cart/add" id="product_form_4675782541369" accept-charset="UTF-8" class="product-form" enctype="multipart/form-data" data-ajax-add-to-cart="true" data-product-id="4675782541369">
+                                        <input type="hidden" name="form_type" value="product">
+                                        <input type="hidden" name="utf8" value="✓">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="id" value="31765063532601">
+                                        <button type="submit" name="add" class="product-add">Show options</button>
+                                    </form>
+                                    <div class="reviews">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-block">
+                                <div class="inner">
+                                    <div class="image">
+                                        <div class="innage">
+                                            <a href="">
+                                                <div class="img-wrapper">
+                                                    <img data-widths="[90, 180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_90x.jpg?v=1591107506 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_180x.jpg?v=1591107506 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_220x.jpg?v=1591107506 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_300x.jpg?v=1591107506 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_360x.jpg?v=1591107506 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_460x.jpg?v=1591107506 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_540x.jpg?v=1591107506 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_720x.jpg?v=1591107506 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_900x.jpg?v=1591107506 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_1080x.jpg?v=1591107506 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_1296x.jpg?v=1591107506 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_1512x.jpg?v=1591107506 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_1728x.jpg?v=1591107506 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_2048x.jpg?v=1591107506 2048w" sizes="133px" srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_90x.jpg?v=1591107506 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_180x.jpg?v=1591107506 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_220x.jpg?v=1591107506 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_300x.jpg?v=1591107506 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_360x.jpg?v=1591107506 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_460x.jpg?v=1591107506 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_540x.jpg?v=1591107506 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_720x.jpg?v=1591107506 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_900x.jpg?v=1591107506 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_1080x.jpg?v=1591107506 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_1296x.jpg?v=1591107506 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_1512x.jpg?v=1591107506 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_1728x.jpg?v=1591107506 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_PEARS_2048x.jpg?v=1591107506 2048w">                                                
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <span class="product-label sale">
+                                            <span>Sale</span>
+                                        </span>
+                                    </div>
+                                    <div class="title-price">
+                                        <a class="title" href="">Brussel Sprouts</a>
+                                        <div class="price"><span class="pretzels"><i>From </i>$4.50 </span><del>$7.50</del></div>
+                                    </div>
+                                    <form method="post" action="/cart/add" id="product_form_4675782541369" accept-charset="UTF-8" class="product-form" enctype="multipart/form-data" data-ajax-add-to-cart="true" data-product-id="4675782541369">
+                                        <input type="hidden" name="form_type" value="product">
+                                        <input type="hidden" name="utf8" value="✓">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="id" value="31765063532601">
+                                        <button type="submit" name="add" class="product-add">Show options</button>                                    </form>
+                                    <div class="reviews">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-block">
+                                <div class="inner">
+                                    <div class="image">
+                                        <div class="innage">
+                                            <a href="">
+                                                <div class="img-wrapper">
+                                                    <img data-widths="[90, 180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_90x.jpg?v=1591107511 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_180x.jpg?v=1591107511 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_220x.jpg?v=1591107511 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_300x.jpg?v=1591107511 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_360x.jpg?v=1591107511 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_460x.jpg?v=1591107511 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_540x.jpg?v=1591107511 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_720x.jpg?v=1591107511 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_900x.jpg?v=1591107511 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_1080x.jpg?v=1591107511 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_1296x.jpg?v=1591107511 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_1512x.jpg?v=1591107511 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_1728x.jpg?v=1591107511 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_2048x.jpg?v=1591107511 2048w" sizes="133px" srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_90x.jpg?v=1591107511 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_180x.jpg?v=1591107511 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_220x.jpg?v=1591107511 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_300x.jpg?v=1591107511 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_360x.jpg?v=1591107511 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_460x.jpg?v=1591107511 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_540x.jpg?v=1591107511 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_720x.jpg?v=1591107511 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_900x.jpg?v=1591107511 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_1080x.jpg?v=1591107511 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_1296x.jpg?v=1591107511 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_1512x.jpg?v=1591107511 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_1728x.jpg?v=1591107511 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_NECTARINES_2048x.jpg?v=1591107511 2048w">                                                
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="title-price">
+                                        <a class="title" href="">Nectarines</a>
+                                        <div class="price">$6.00</div>
+                                    </div>
+                                    <form method="post" action="/cart/add" id="product_form_4675782541369" accept-charset="UTF-8" class="product-form" enctype="multipart/form-data" data-ajax-add-to-cart="true" data-product-id="4675782541369">
+                                        <input type="hidden" name="form_type" value="product">
+                                        <input type="hidden" name="utf8" value="✓">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="id" value="31765063532601">
+                                        <button type="submit" name="add" class="product-add">Add to cart</button>
+                                    </form>
+                                    <div class="reviews">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-block">
+                                <div class="inner">
+                                    <div class="image">
+                                        <div class="innage">
+                                            <a href="">
+                                                <div class="img-wrapper">
+                                                    <img data-widths="[90, 180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_90x.jpg?v=1591107517 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_180x.jpg?v=1591107517 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_220x.jpg?v=1591107517 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_300x.jpg?v=1591107517 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_360x.jpg?v=1591107517 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_460x.jpg?v=1591107517 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_540x.jpg?v=1591107517 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_720x.jpg?v=1591107517 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_900x.jpg?v=1591107517 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_1080x.jpg?v=1591107517 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_1296x.jpg?v=1591107517 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_1512x.jpg?v=1591107517 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_1728x.jpg?v=1591107517 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_2048x.jpg?v=1591107517 2048w" sizes="133px" srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_90x.jpg?v=1591107517 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_180x.jpg?v=1591107517 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_220x.jpg?v=1591107517 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_300x.jpg?v=1591107517 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_360x.jpg?v=1591107517 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_460x.jpg?v=1591107517 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_540x.jpg?v=1591107517 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_720x.jpg?v=1591107517 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_900x.jpg?v=1591107517 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_1080x.jpg?v=1591107517 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_1296x.jpg?v=1591107517 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_1512x.jpg?v=1591107517 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_1728x.jpg?v=1591107517 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_BEETS_2048x.jpg?v=1591107517 2048w">                                                
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="weight">2.2 Ib</div>
+                                    <div class="title-price">
+                                        <a class="title" href="">Organic Beets</a>
+                                        <div class="price">$7.50</div>
+                                    </div>
+                                    <form method="post" action="/cart/add" id="product_form_4675782541369" accept-charset="UTF-8" class="product-form" enctype="multipart/form-data" data-ajax-add-to-cart="true" data-product-id="4675782541369">
+                                        <input type="hidden" name="form_type" value="product">
+                                        <input type="hidden" name="utf8" value="✓">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="id" value="31765063532601">
+                                        <button type="submit" name="add" class="product-add">Add to cart</button>
+                                    </form>
+                                    <div class="reviews">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sect3">
+                    <div class="container">
+                        <div class="opposing">
+                            <h1 class="section-heading">
+                                <a href="">The Bakery</a>
+                            </h1>
+                            <a href="" class="view">View all</a>
+                        </div>
+                        <div class="product-grid">
+                            <div class="first product-block">
+                                <div class="inner">
+                                    <div class="image">
+                                        <div class="innage">
+                                            <a href="">
+                                                <div class="img-wrapper">
+                                                    <img data-widths="[90, 180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_90x.jpg?v=1591107493 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_180x.jpg?v=1591107493 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_220x.jpg?v=1591107493 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_300x.jpg?v=1591107493 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_360x.jpg?v=1591107493 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_460x.jpg?v=1591107493 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_540x.jpg?v=1591107493 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_720x.jpg?v=1591107493 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_900x.jpg?v=1591107493 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1080x.jpg?v=1591107493 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1296x.jpg?v=1591107493 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1512x.jpg?v=1591107493 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1728x.jpg?v=1591107493 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_2048x.jpg?v=1591107493 2048w" sizes="133px" srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_90x.jpg?v=1591107493 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_180x.jpg?v=1591107493 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_220x.jpg?v=1591107493 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_300x.jpg?v=1591107493 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_360x.jpg?v=1591107493 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_460x.jpg?v=1591107493 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_540x.jpg?v=1591107493 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_720x.jpg?v=1591107493 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_900x.jpg?v=1591107493 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1080x.jpg?v=1591107493 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1296x.jpg?v=1591107493 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1512x.jpg?v=1591107493 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1728x.jpg?v=1591107493 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_2048x.jpg?v=1591107493 2048w">                                                
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="weight">1.32 Ib</div>
+                                    <div class="title-price">
+                                        <a class="title" href="">Macaroons</a>
+                                        <div class="price">$5.00</div>
+                                    </div>
+                                    <form method="post" action="/cart/add" id="product_form_4675782541369" accept-charset="UTF-8" class="product-form" enctype="multipart/form-data" data-ajax-add-to-cart="true" data-product-id="4675782541369">
+                                        <input type="hidden" name="form_type" value="product">
+                                        <input type="hidden" name="utf8" value="✓">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="id" value="31765063532601">
+                                        <button type="submit" name="add" class="product-add">Show options</button>                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-block">
+                                <div class="inner">
+                                    <div class="image">
+                                        <div class="innage">
+                                            <a href="">
+                                                <div class="img-wrapper">
+                                                    <img data-widths="[90, 180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_90x.jpg?v=1591107493 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_180x.jpg?v=1591107493 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_220x.jpg?v=1591107493 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_300x.jpg?v=1591107493 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_360x.jpg?v=1591107493 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_460x.jpg?v=1591107493 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_540x.jpg?v=1591107493 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_720x.jpg?v=1591107493 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_900x.jpg?v=1591107493 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1080x.jpg?v=1591107493 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1296x.jpg?v=1591107493 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1512x.jpg?v=1591107493 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1728x.jpg?v=1591107493 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_2048x.jpg?v=1591107493 2048w" sizes="133px" srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_90x.jpg?v=1591107493 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_180x.jpg?v=1591107493 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_220x.jpg?v=1591107493 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_300x.jpg?v=1591107493 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_360x.jpg?v=1591107493 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_460x.jpg?v=1591107493 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_540x.jpg?v=1591107493 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_720x.jpg?v=1591107493 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_900x.jpg?v=1591107493 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1080x.jpg?v=1591107493 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1296x.jpg?v=1591107493 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1512x.jpg?v=1591107493 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_1728x.jpg?v=1591107493 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_BLOOMER_2048x.jpg?v=1591107493 2048w">                                                
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <span class="product-label low">
+                                            <span>Sold Out</span>
+                                        </span>
+                                    </div>
+                                    <div class="weight">1.1 Ib</div>
+                                    <div class="title-price">
+                                        <a class="title" href="">French Bread</a>
+                                        <div class="price">$2.75</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-block">
+                                <div class="inner">
+                                    <div class="image">
+                                        <div class="innage">
+                                            <a href="">
+                                                <div class="img-wrapper">
+                                                    <img data-widths="[90, 180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_90x.jpg?v=1591107515 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_180x.jpg?v=1591107515 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_220x.jpg?v=1591107515 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_300x.jpg?v=1591107515 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_360x.jpg?v=1591107515 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_460x.jpg?v=1591107515 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_540x.jpg?v=1591107515 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_720x.jpg?v=1591107515 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_900x.jpg?v=1591107515 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1080x.jpg?v=1591107515 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1296x.jpg?v=1591107515 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1512x.jpg?v=1591107515 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1728x.jpg?v=1591107515 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_2048x.jpg?v=1591107515 2048w" sizes="133px" srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_90x.jpg?v=1591107515 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_180x.jpg?v=1591107515 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_220x.jpg?v=1591107515 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_300x.jpg?v=1591107515 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_360x.jpg?v=1591107515 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_460x.jpg?v=1591107515 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_540x.jpg?v=1591107515 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_720x.jpg?v=1591107515 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_900x.jpg?v=1591107515 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1080x.jpg?v=1591107515 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1296x.jpg?v=1591107515 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1512x.jpg?v=1591107515 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_1728x.jpg?v=1591107515 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsFruit_Vegetables1200x1200_FENNEL_2048x.jpg?v=1591107515 2048w">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="weight">0.66 Ib</div>
+                                    <div class="title-price">
+                                        <a class="title" href="">Croissants</a>
+                                        <div class="price">$4.00</div>
+                                    </div>
+                                    <form method="post" action="/cart/add" id="product_form_4675782541369" accept-charset="UTF-8" class="product-form" enctype="multipart/form-data" data-ajax-add-to-cart="true" data-product-id="4675782541369">
+                                        <input type="hidden" name="form_type" value="product">
+                                        <input type="hidden" name="utf8" value="✓">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="id" value="31765063532601">
+                                        <button type="submit" name="add" class="product-add">Show options</button>                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-block">
+                                <div class="inner">
+                                    <div class="image">
+                                        <div class="innage">
+                                            <a href="">
+                                                <div class="img-wrapper">
+                                                    <img data-widths="[90, 180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_90x.jpg?v=1591107485 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_180x.jpg?v=1591107485 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_220x.jpg?v=1591107485 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_300x.jpg?v=1591107485 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_360x.jpg?v=1591107485 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_460x.jpg?v=1591107485 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_540x.jpg?v=1591107485 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_720x.jpg?v=1591107485 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_900x.jpg?v=1591107485 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_1080x.jpg?v=1591107485 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_1296x.jpg?v=1591107485 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_1512x.jpg?v=1591107485 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_1728x.jpg?v=1591107485 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_2048x.jpg?v=1591107485 2048w" sizes="133px" srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_90x.jpg?v=1591107485 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_180x.jpg?v=1591107485 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_220x.jpg?v=1591107485 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_300x.jpg?v=1591107485 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_360x.jpg?v=1591107485 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_460x.jpg?v=1591107485 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_540x.jpg?v=1591107485 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_720x.jpg?v=1591107485 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_900x.jpg?v=1591107485 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_1080x.jpg?v=1591107485 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_1296x.jpg?v=1591107485 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_1512x.jpg?v=1591107485 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_1728x.jpg?v=1591107485 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_PRETZELS_2048x.jpg?v=1591107485 2048w">                                                
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <span class="product-label sale">
+                                            <span>Sale</span>
+                                        </span>
+                                    </div>
+                                    <div class="weight">1.1 Ib</div>
+                                    <div class="title-price">
+                                        <a class="title" href="">Pretzels</a>
+                                        <div class="price"><span class="pretzels">$3.00 </span><del>$4.00</del></div>
+                                    </div>
+                                    <form method="post" action="/cart/add" id="product_form_4675782541369" accept-charset="UTF-8" class="product-form" enctype="multipart/form-data" data-ajax-add-to-cart="true" data-product-id="4675782541369">
+                                        <input type="hidden" name="form_type" value="product">
+                                        <input type="hidden" name="utf8" value="✓">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="id" value="31765063532601">
+                                        <button type="submit" name="add" class="product-add">Add to cart</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-block">
+                                <div class="inner">
+                                    <div class="image">
+                                        <div class="innage">
+                                            <a href="">
+                                                <div class="img-wrapper">
+                                                    <img class="rimage__image fade-in lazyautosizes lazyloaded" data-widths="[90, 180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_90x.jpg?v=1591107489 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_180x.jpg?v=1591107489 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_220x.jpg?v=1591107489 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_300x.jpg?v=1591107489 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_360x.jpg?v=1591107489 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_460x.jpg?v=1591107489 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_540x.jpg?v=1591107489 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_720x.jpg?v=1591107489 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_900x.jpg?v=1591107489 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_1080x.jpg?v=1591107489 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_1296x.jpg?v=1591107489 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_1512x.jpg?v=1591107489 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_1728x.jpg?v=1591107489 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_2048x.jpg?v=1591107489 2048w" sizes="133px" srcset="//cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_90x.jpg?v=1591107489 90w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_180x.jpg?v=1591107489 180w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_220x.jpg?v=1591107489 220w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_300x.jpg?v=1591107489 300w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_360x.jpg?v=1591107489 360w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_460x.jpg?v=1591107489 460w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_540x.jpg?v=1591107489 540w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_720x.jpg?v=1591107489 720w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_900x.jpg?v=1591107489 900w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_1080x.jpg?v=1591107489 1080w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_1296x.jpg?v=1591107489 1296w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_1512x.jpg?v=1591107489 1512w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_1728x.jpg?v=1591107489 1728w, //cdn.shopify.com/s/files/1/0848/3488/products/CCFarmShopProductsBakery1200x1200_CIABATTA_2048x.jpg?v=1591107489 2048w">                                                
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <span class="product-label low">
+                                            <span>Only 4 left!</span>
+                                        </span>
+                                    </div>
+                                    <div class="weight">0.88 Ib</div>
+                                    <div class="title-price">
+                                        <a class="title" href="">Italian Ciabtta</a>
+                                        <div class="price">$3.00</div>
+                                    </div>
+                                    <form method="post" action="/cart/add" id="product_form_4675782541369" accept-charset="UTF-8" class="product-form" enctype="multipart/form-data" data-ajax-add-to-cart="true" data-product-id="4675782541369">
+                                        <input type="hidden" name="form_type" value="product">
+                                        <input type="hidden" name="utf8" value="✓">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="id" value="31765063532601">
+                                        <button type="submit" name="add" class="product-add">Add to cart</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+            
+            </footer>
 
         </div>
     </div>
-
-    
-
-
-
-
-
-    <main>
-
-    </main>
-
-
-
-
-
-    <footer>
-
-    </footer>
 
 </body>
 </html>
