@@ -25,45 +25,72 @@ console.log('2:', (m + n + e)/3);
 
 // Įvedami skaičiai -a, b, c –kraštinių ilgiai, trys kintamieji (naudokite ​rand()​ funkcija nuo 1 iki 10). 
 // Parašykite skriptą, kuris nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų naudojant console.log(). 
-var a = rand(-1, -10), b = rand(1, 10), c = rand(1, 10);
-
-if (a > 0) {
-    
+var a = rand(1, 10), b = rand(1, 10), c = rand(1, 10);
+console.log('3:', a, b, c);
+if (a + b > c && b + c > a && c + a > b) {
+    console.log('GALIMA');
 }
-else if (b > 0) {
-    
+else {
+    console.log('NEGALIMA');
 }
-a > 0, b > 0, c > 0;
-var trik = a && b && c;
-console.log('3:', trik);
 
 // Sukurkite keturis kintamuosius ir ​rand()​ funkcija sugeneruokite jiems reikšmes nuo 0 iki 2. 
 // Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. 
 // Rezultatus atspauzdinkite su console.log()
 var d = rand(0, 2), j = rand(0, 2), o = rand(0, 2), p = rand(0, 2);
-while (rand(0, 2) === 0) {
-    console.log('4:', d, j, o, p);
+var nuliai = 0; vienetai = 0; dvejetai = 0;
+console.log(d, j, o, p);
+if (d === 2) {
+    dvejetai++;
 }
-while (rand(0, 2) === 1) {
-    console.log('4.1:', d, j, o, p);
+if (j === 2) {
+    dvejetai++;
 }
-while (rand(0, 2) === 2) {
-    console.log('4.2:', d, j, o, p);
+if (o === 2) {
+    dvejetai++;
 }
+if (p === 2) {
+    dvejetai++;
+}
+vienetai = d + j + o + p - (dvejetai * 2);
+
+nuliai= 4 - vienetai - dvejetai;
+
+console.log(nuliai, vienetai, dvejetai);
 
 // Naudokite funkcija rand(). 
 // Atspausdinkite 3 skaičius naudodami console.log() nuo -10 iki 10. 
 // Prie skaičių mažesnių už 0 iš abiejų pusių atspauzdinkite “+” simbolius,  didesnių už 0 iš abiejų pusių atspauzdinkite “-” simbolius, o prie 0 “*” simbolius
 var r = rand(-10, 10), s = rand(-10, 10), t = rand(-10, 10);
 
-if (rand(-10, 10) < 0) {
-    console.log('5:', '+' + r + '+');
+if (r < 0) {
+    console.log('5:', '+ ' + r + ' +');
 }
-else if (rand(-10, 10) > 0) {
-    console.log('5.1:', '-' + s + '-');
+else if (r > 0) {
+    console.log('5.1:', '- ' + r + ' -');
 }
-else if (rand(-10, 10) = 0) {
-    console.log('5.2:', '*' + t + '*');
+else{
+    console.log('5.2:', '* ' + r + ' *');
+}
+
+if (s < 0) {
+    console.log('5:', '+ ' + s + ' +');
+}
+else if (s > 0) {
+    console.log('5.1:', '- ' + s + ' -');
+}
+else{
+    console.log('5.2:', '* ' + s + ' *');
+}
+
+if (t < 0) {
+    console.log('5:', '+ ' + t + ' +');
+}
+else if (t > 0) {
+    console.log('5.1:', '- ' + t + ' -');
+}
+else{
+    console.log('5.2:', '* ' + t + ' *');
 }
 
 // Įmonė parduoda žvakes po 1 EUR. 
@@ -73,12 +100,12 @@ else if (rand(-10, 10) = 0) {
 var zvkaina, zvkiekis = rand(5, 3000);
 
 if (zvkiekis > 2000) {
-    zvkaina = (zvkiekis*4)/100;
-    console.log('6:', zvkiekis, '-', zvkaina);
+    zvkaina = zvkiekis - (zvkiekis*4)/100;
+    console.log('6:', zvkiekis, 'žv. už', zvkaina, 'EUR');
 }
 else if (zvkiekis > 1000) {
-    zvkaina = (zvkiekis*3)/100;
-    console.log('6.1:', zvkiekis, '-', zvkaina);
+    zvkaina = zvkiekis - (zvkiekis*3)/100;
+    console.log('6.1:', zvkiekis, 'žv. už', zvkaina, 'EUR');
 }
 
 // Naudokite funkcija rand(). 
@@ -86,5 +113,10 @@ else if (zvkiekis > 1000) {
 // Paskaičiuokite jų aritmetinį vidurkį. 
 // Ir aritmetinį vidurkį atmetus tas reikšmes, kurios yra mažesnės nei 10 arba didesnės nei 90. 
 // Abu vidurkius atspausdinkite su console.log()
+var u = rand(0, 100); f = rand(0, 100); h = rand(0, 100);
+y = (u + f + h)/3;
 
-console.log('7:');
+if (10 < rand(0, 100) < 90) {
+    z = (u + f + h)/3;
+}
+console.log('7:', y, z);
