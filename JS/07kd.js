@@ -5,12 +5,15 @@ function rand(min, max){
 }
 
 
-var rand2;
-do{
-    rand2 = rand(10, 20);
-    console.log('A8:', rand2);
+// var rand2 = rand(10, 20);
+// do{
+   
+//     if (rand2 <= 12) {
+//         break;
+//     }
 
-    if (rand >= 12) {
-        break;
-    }
 // }while (true);
+
+// console.log('A8.1:', rand2);
+
+
