@@ -34,14 +34,45 @@ console.log(h1.classList.contains('dddddddddddd'));
 
 // li.forEach[0](e => e.style.fontSize = rand(10, 30) + 'px');
 
-const colors = ['green', 'red', 'brown'];
-const cla = ['one', 'two', 'three'];
+
+
+// const colors = ['green', 'red', 'brown'];
+// const cla = ['one', 'two', 'three'];
+// const ul = document.querySelectorAll('ul');
+// ul.forEach((lis, i) => {
+//     lis.querySelectorAll('li').forEach(li => {
+//         li.style.fontSize = rand(10, 30) + 'px';
+//         li.style.color = colors[i%3];
+//         li.classList.add(cla[i%3]);
+//     })
+// });
+
+
+
+
 const ul = document.querySelectorAll('ul');
-ul.forEach((lis, i) => {
-    lis.querySelectorAll('li').forEach(li => {
-        li.style.fontSize = rand(10, 30) + 'px';
-        li.style.color = colors[i%3];
-        li.classList.add(cla[i%3]);
-    })
-});
+
+const color = ['green', 'yellow', 'blue'];
+
+const cl = ['one', 'two', 'three']
+
+
+
+for (let i = 0; i < ul.length; i++) {
+
+   const li = ul[i].querySelectorAll('li');
+
+
+
+   for (let j = 0; j < li.length; j++) {
+
+     li[j].style.color = color[i % 3];
+
+     li[j].style.fontSize = rand(10, 30) + 'px';
+
+     li[j].classList.add(cl[j % 3]);
+
+   }
+
+}
 
