@@ -32,7 +32,7 @@ console.log(h1.classList.contains('dddddddddddd'));
 // // li[1].style.fontSize = rand(10, 30) + 'px';
 // // li[2].style.fontSize = rand(10, 30) + 'px';
 
-// li.forEach[0](e => e.style.fontSize = rand(10, 30) + 'px');
+// li.forEach(e => e.style.fontSize = rand(10, 30) + 'px');
 
 
 
