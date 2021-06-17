@@ -61,8 +61,8 @@ for (let index = 0; index < G.length; index++) {
 const H = document.querySelector('h5');
 
 const I = document.createElement('h3');
-for (let index = 0; index < I.length; index++) {
-    H.insertBefore(I[index], H);
+for (let index = 0; index < 5; index++) {
+    H.appendChild(I);
 }
 
 console.log(H);
