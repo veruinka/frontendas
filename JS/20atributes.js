@@ -41,11 +41,11 @@ const kk = document.querySelector('#but1').addEventListener('click', () => A.set
 
 
 
-// const F = document.querySelector('img');
+const F = document.querySelector('img');
 
-// const prev = document.querySelector('#buttt').addEventListener('click', () => F.setAttribute('src', img.dataset.AB));
-// const set = document.querySelector('#buttt2').addEventListener('click', () => F.setAttribute('src', img.dataset.BC));
-// const nex = document.querySelector('#buttt1').addEventListener('click', () => F.setAttribute('src', img.dataset.CD));
+document.querySelector('#buttt').addEventListener('click', () => F.setAttribute('src', F.dataset.AB));
+document.querySelector('#buttt2').addEventListener('click', () => F.setAttribute('src', F.dataset.BC));
+document.querySelector('#buttt1').addEventListener('click', () => F.setAttribute('src', F.dataset.CD));
 
 
 
@@ -54,14 +54,47 @@ const kk = document.querySelector('#but1').addEventListener('click', () => A.set
 
 
 //universalus kodas, kur nereikia kazka prideti js faile
-const F = document.querySelector('img');
+// const F = document.querySelector('img');
 
-document.querySelector('.buts').querySelectorAll('button').forEach(e => {
-    e.addEventListener('click', () => {
-       F.setAttribute('src', img.dataset[e.id]);
-    });
+// document.querySelector('.buts').querySelectorAll('button').forEach(e => {
+//     e.addEventListener('click', () => {
+//         document.querySelector('img').setAttribute('src', img.dataset[e.id]);
+//     });
+// });
+
+
+
+
+
+
+
+// const inp = document.querySelector('[name=labas]');
+// const selec = document.querySelector('[name=sele]');
+
+// inp.addEventListener('input', () => {
+//     console.log(inp.value);
+// });
+
+// selec.addEventListener('change', () => {
+//     console.log(selec.value);
+// });
+
+
+
+
+const foto = document.querySelector('[name=fotos]');
+
+foto.addEventListener('change', (e) => {
+    F.setAttribute('src', e.target.value);
 });
 
 
 
 
+const h1 = document.querySelector('h1');
+const selec = document.querySelector('[name=pasi]');
+
+selec.addEventListener('click', () => {
+    const A = selec.value;
+    h1.innerText = A;
+});
