@@ -82,9 +82,8 @@ document.querySelector('#buttt1').addEventListener('click', () => F.setAttribute
 
 
 
-const foto = document.querySelector('[name=fotos]');
 
-foto.addEventListener('change', (e) => {
+document.querySelector('[name=fotos]').addEventListener('change', (e) => {
     F.setAttribute('src', e.target.value);
 });
 
@@ -97,4 +96,21 @@ const selec = document.querySelector('[name=pasi]');
 selec.addEventListener('click', () => {
     const A = selec.value;
     h1.innerText = A;
+});
+
+
+
+
+const h2 = document.querySelector('h2');
+const colo = document.querySelector('[name=spalvos]');
+const reset = document.querySelector('#reset');
+const co = ['green', 'yellow', 'purple'];
+
+
+colo.addEventListener('click', (e) => {
+    h2.style.color = co[e];
+});
+
+reset.addEventListener('click', () => {
+    h2.innerText = h2;
 });
